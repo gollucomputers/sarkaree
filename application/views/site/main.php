@@ -53,7 +53,7 @@
 						
 						<div class="home_slider_next_container">
 	<?php $nextslide=$row+1; if ($row===$sliderlength-1) $nextslide=0; ?>
-							<div class="home_slider_next" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $newsforslider[$nextslide]->image; ?>)">
+							<div class="home_slider_next" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $newsforslider[$nextslide]->image."'"; ?>)">
 								<div class="home_slider_next_background trans_400"></div>
 								<div class="home_slider_next_content trans_400">
 									<div class="home_slider_next_title">next</div>
@@ -156,7 +156,7 @@
 	<?php } break; case 3: { ?>
 									<!-- Small Card With Background -->
 									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>)"></div>
+										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
@@ -220,7 +220,7 @@
 	switch($card) { case '1': { ?>
 									<!-- Large Card With Background -->
 									<div class="card card_large_with_background grid-item">
-										<div class="card_background" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>)"></div>
+										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
@@ -252,7 +252,7 @@
 	<?php } break; case 4: { ?>
 									<!-- Default Card With Background -->
 									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>)"></div>
+										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 										</div>
@@ -275,7 +275,7 @@
 								
 							</div>
 						</div>
-
+<?php /*
 						<!-- Blog Section - Videos -->
 
 						<div class="blog_section">
@@ -313,7 +313,7 @@
 								</div>
 							</div>
 						</div>
-
+ */?>
 						<!-- Blog Section - Latest -->
 
 						<div class="blog_section">
@@ -349,7 +349,7 @@
 	<?php } break; case 3: { ?>
 									<!-- Small Card With Background -->
 									<div class="card card_default card_small_with_background grid-item">
-										<div class="card_background" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>)"></div>
+										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
@@ -359,7 +359,7 @@
 	<?php } break; default: { ?>
 									<!-- Default Card With Background -->
 									<div class="card card_default card_default_with_background grid-item">
-										<div class="card_background" style="background-image:url(<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>)"></div>
+										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 										</div>

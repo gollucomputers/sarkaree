@@ -49,12 +49,12 @@ Licence URI: http://www.os-templates.com/template-terms
 						<div class="logo"><a href="/"><img alt="sarkaree" src="<?php echo base_url(); ?>assets/logo.png"></a></div>
 						<nav class="main_nav">
 							<ul>
-								<li class="active"><a href="/">Home</a></li>
-								<li><a href="home/page/1">Employment</a></li>
-								<li><a href="home/page/2">Education</a></li>
-								<li><a href="home/page/3">Business</a></li>
-								<li><a href="home/page/4">Misc</a></li>
-								<li><a href="home/page/5">Contact</a></li>
+								<li class="active"><a href="/">Feeds</a></li>
+								<li><a href="/page/1">Trending</a></li>
+								<li><a href="/page/2">Handpicked</a></li>
+								<li><a href="/page/3">Videos</a></li>
+								<li><a href="/page/4">Articles</a></li>
+								<li><a href="/page/5">More</a></li>
 							
 							</ul>
 						</nav>
@@ -92,12 +92,12 @@ Licence URI: http://www.os-templates.com/template-terms
 		</div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="index.html">home</a></li>
-				<li><a href="home/page/1">Employment</a></li>
-				<li><a href="home/page/2">Education</a></li>
-				<li><a href="home/page/3">Business</a></li>
-				<li><a href="home/page/4">Misc</a></li>
-				<li><a href="home/page/5">Contact</a></li>
+				<li class="menu_mm"><a href="/">Feeds</a></li>
+				<li><a href="/page/1">Trending</a></li>
+				<li><a href="/page/2">Handpicked</a></li>
+				<li><a href="/page/3">Videos</a></li>
+				<li><a href="/page/4">Articles</a></li>
+				<li><a href="/page/5">More</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -251,6 +251,8 @@ class AdminModel extends CI_Model {
 		{
 			$id=$this->db->insert_id();
 			$tags=$tags['tags'];
+			if(!sizeof($tags))
+			return true;
 			foreach ($tags as $row)
 			{
 				$val=array('news_id'=> $id, 'tag_id'=> $row);
@@ -332,9 +334,10 @@ class AdminModel extends CI_Model {
 		return $this->db->delete('news');
 	}
 
-	public function editnews($newsid,$data)
+	public function editnews($newsid,$data,$tags)
 	{
-		$this->db->where('news_id', $newsid);
+		$array = array('news_id' => $newsid);
+		$this->db->where($array);
 		$this->db->update('news', $data);
 		$id=$newsid;
 		$tags=$tags['tags'];
@@ -346,7 +349,7 @@ class AdminModel extends CI_Model {
 				return false;
 			}
 		}
-		return false;
+		return true;
 
 	}
 
