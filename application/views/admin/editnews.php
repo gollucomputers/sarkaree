@@ -50,12 +50,21 @@
 			</select>
 		</td>
 	</tr>
+
 	<tr>
 		<td>News Image : </td>
 		<td>
 			<img src="<?php echo base_url().'/assets/uploads/'.$newsdata->image; ?>" width="100px" height="100px" /> 
 		</td>
 	</tr>
+
+	<tr>
+		<td>News Last Date (Optional): </td>
+		<td>
+		<input type="text" name="lastdate" class="lastdate" placeholder="DD-MM-YYYY" value="<?php echo $newsdata->lastdate; ?>">
+		</td>
+	</tr>
+
 	<tr>
 		<td>News Youtube video : </td>
 		<td><input type="text" name="youtube_video" size="40" value="<?php echo  $newsdata->youtube_video; ?>" /></td>

@@ -332,7 +332,7 @@
 														<div class="side_post_image"><div><img src="<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>" alt=""></div></div>
 														<div class="side_post_content">
 															<div class="side_post_title"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></div>
-															<small class="post_meta">Nitesh Kumar<span>Sep 29</span></small>
+															<small class="post_meta">Nitesh Kumar<span><?php echo $row->lastdate ?></span></small>
 														</div>
 													</div>
 												</a>

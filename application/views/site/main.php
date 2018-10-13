@@ -140,7 +140,7 @@
 										<div class="card-body">
 											<div class="card-title"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 											<p class="card-text"><?php echo mb_substr(strip_tags($row->content), 0,90); ?></p>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -149,7 +149,7 @@
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -159,7 +159,7 @@
 										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 	<?php } break; case 4: { ?>
@@ -168,7 +168,7 @@
 										<img class="card-img-top" src="<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>" alt="">
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 	<?php } break; default: { ?>
@@ -223,7 +223,7 @@
 										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><<?php  echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?>/span></small>
 										</div>
 									</div>
 
@@ -234,7 +234,7 @@
 										<div class="card-body">
 											<div class="card-title"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
 											<p class="card-text"><?php echo mb_substr(strip_tags($row->content), 0,90); ?></p>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -333,7 +333,7 @@
 										<img class="card-img-top" src="<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>" alt="">
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -342,7 +342,7 @@
 									<div class="card card_default card_small_no_image grid-item">
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -352,7 +352,7 @@
 										<div class="card_background" style="background-image:url(<?php echo "'".base_url(); ?>assets/uploads/<?php echo $row->image."'"; ?>)"></div>
 										<div class="card-body">
 											<div class="card-title card-title-small"><a href="<?php echo base_url().'home/news/'.$row->news_id; ?>"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></a></div>
-											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span>Sep 29, 2017 at 9:48 am</span></small>
+											<small class="post_meta"><a href="#"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?></a><span><?php echo date("M d, Y \a\\t h:m a", strtotime($row->dateposted)); ?></span></small>
 										</div>
 									</div>
 
@@ -431,7 +431,7 @@
 														<div class="side_post_image"><div><img src="<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>" alt=""></div></div>
 														<div class="side_post_content">
 															<div class="side_post_title"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></div>
-															<small class="post_meta"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span>Sep 29</span></small>
+															<small class="post_meta"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span><?php echo date("M d", strtotime($row->dateposted)); ?></span></small>
 														</div>
 													</div>
 												</a>
@@ -503,7 +503,7 @@
 														<div class="side_post_image"><div><img src="<?php echo base_url(); ?>assets/uploads/<?php echo $row->image; ?>" alt=""></div></div>
 														<div class="side_post_content">
 															<div class="side_post_title"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></div>
-															<small class="post_meta"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span>Sep 29</span></small>
+															<small class="post_meta"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span><?php echo date("M d", strtotime($row->dateposted)); ?></span></small>
 														</div>
 													</div>
 												</a>
@@ -572,12 +572,12 @@
 												<a href="<?php echo base_url().'home/news/'.$row->news_id; ?>">
 													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
 														<div class="event_date d-flex flex-column align-items-center justify-content-center">
-															<div class="event_day">13</div>
-															<div class="event_month">apr</div>
+															<div class="event_day"><?php if(empty($row->lastdate)) echo "NA"; else echo date("d", strtotime($row->lastdate)); ?></div>
+															<div class="event_month"><?php if(empty($row->lastdate)) echo ""; else echo date("M", strtotime($row->lastdate)); ?></div>
 														</div>
 														<div class="side_post_content">
 															<div class="side_post_title"><?php echo mb_substr(strip_tags($row->title), 0,90); ?></div>
-															<small class="post_meta"><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span>Sep 29</span></small>
+															<small class="post_meta"><span><?php echo $this->adminModel->getcatnamewhere($row->cat_id); ?><span><?php echo date("M d", strtotime($row->dateposted)); ?></span></small>
 														</div>
 													</div>
 												</a>

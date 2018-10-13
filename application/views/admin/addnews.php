@@ -28,19 +28,19 @@
 <?php endif; ?>
 
 <script type="text/javascript">
-	tinymce.init({
-  selector: 'textarea',
-  height: 500,
-  plugins: [
-    'advlist autolink lists link image charmap print preview anchor',
-    'searchreplace visualblocks code fullscreen',
-    'insertdatetime media table contextmenu paste code'
-  ],
-  toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-  content_css: [
-    '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
-    '//www.tinymce.com/css/codepen.min.css'
-  ]
+tinymce.init({
+selector: 'textarea',
+	height: 500,
+	plugins: [
+		'advlist autolink lists link image charmap print preview anchor',
+		'searchreplace visualblocks code fullscreen',
+		'insertdatetime media table contextmenu paste code'
+	],
+	toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+	content_css: [
+		'//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+		'//www.tinymce.com/css/codepen.min.css'
+	]
 });
 </script>
 <h2>Add News </h2>
@@ -67,6 +67,13 @@
 			<input type="file" name="image" /> *
 		</td>
 	</tr>
+<tr>
+		<td>News Last Date (Optional): </td>
+		<td>
+		<input type="text" name="lastdate" class="lastdate" placeholder="DD-MM-YYYY">
+		</td>
+	</tr>
+
 	<tr>
 		<td>News Youtube video : </td>
 		<td><input type="text" name="youtube_video" size="40" /></td>
@@ -82,24 +89,24 @@
 		<td>Tags : </td>
 		<td>
 <dl class="dropdown"> 
-  
-    <dt>
-    <a href="#">
-      <span class="hida">Select Tags</span>    
-      <p class="multiSel"></p>  
-    </a>
-    </dt>
-  
-    <dd>
-        <div class="mutliSelect">
-            <ul>
+
+	<dt>
+	<a href="#">
+	  <span class="hida">Select Tags</span>    
+	  <p class="multiSel"></p>  
+	</a>
+	</dt>
+
+	<dd>
+		<div class="mutliSelect">
+			<ul>
 				<?php foreach($tags as $row): ?>
-                <li>
-                    <input name="tags[]" type="checkbox" value="<?php echo $row->tag_id; ?> " title="<?php echo $row->title; ?>" /><?php echo $row->title; ?></li>
+				<li>
+					<input name="tags[]" type="checkbox" value="<?php echo $row->tag_id; ?> " title="<?php echo $row->title; ?>" /><?php echo $row->title; ?></li>
 			<?php endforeach; ?>
-            </ul>
-        </div>
-    </dd>
+			</ul>
+		</div>
+	</dd>
 </dl>
 
 		</td>
@@ -111,10 +118,8 @@
 	</tr>
 </table>
 </form>		
-			
-			
-			
-			
+
+
+
+
 <div class="clear"></div> <!-- End .clear -->
-			
-			

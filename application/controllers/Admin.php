@@ -321,6 +321,12 @@ class Admin extends CI_Controller {
                 }
                 else
                 {
+					if(empty($this->input->post('lastdate'))) {
+						$lastdate=NULL;
+					}
+					else {
+						$lastdate=date("Y-m-d 00:00:00", strtotime($this->input->post('lastdate')));
+					}
                   //if image is uploaded
                   $insert = array(
                   		'title' => $this->input->post('title'),
@@ -328,6 +334,7 @@ class Admin extends CI_Controller {
                   		'user_id' => $this->session->userdata('user_id'),
                   		'cat_id' => $this->input->post('cat_id'),
                   		'image' => $this->upload->data('file_name'),
+					    'lastdate' =>$lastdate, 
                   		'youtube_video' => $this->input->post('youtube_video')
                   	);
 
@@ -381,10 +388,17 @@ class Admin extends CI_Controller {
           $data['tagsdata'] = $this->adminModel->get_relative_tags($newsid);
           $this->load_view('admin/editnews',$data);
         } else {
+			        if(empty($this->input->post('lastdate'))) {
+						$lastdate=NULL;
+					}
+					else {
+						$lastdate=date("Y-m-d 00:00:00", strtotime($this->input->post('lastdate')));
+					}
               $insert = array(
                       'title' => $this->input->post('title'),
                       'content' => $this->input->post('content'),
                       'cat_id' => $this->input->post('cat_id'),
+					  'lastdate' => $lastdate, 
                       'youtube_video' => $this->input->post('youtube_video')
                     );
 
